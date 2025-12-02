@@ -25,7 +25,7 @@ impl Database {
             .collect()
     }
 
-    pub fn find_invalid_product_id(&self) -> Vec<ProductId> {
+    pub fn find_invalid_product_ids(&self) -> Vec<ProductId> {
         self.product_id_ranges
             .iter()
             .flat_map(|x| x.into_iter().filter(ProductId::is_invalid))
