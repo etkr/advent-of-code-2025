@@ -44,7 +44,7 @@ impl Database {
     /// ```
     ///
     /// ```
-    fn reduce_fresh_ingredient_ranges(
+    pub fn reduce_fresh_ingredient_ranges(
         ingredient_ids: &HashSet<IngredientIdRange>,
     ) -> HashSet<IngredientIdRange> {
         let mut new: HashSet<IngredientIdRange> = HashSet::new();

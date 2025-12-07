@@ -1,7 +1,6 @@
 use crate::day5::ingredient_id::IngredientId;
 use std::cmp::{max, min};
 use std::error::Error;
-use std::ops::Sub;
 use std::str::FromStr;
 
 #[derive(Debug, PartialEq, Eq, Clone, Hash)]
